@@ -23,7 +23,7 @@ function getResponseFromViptela(startDateStr, endDateStr, counter,callback){
       var creticalIssuesList = [];
       var jsonData = JSON.parse(body);
       date1= Date(jsonData.data[0].entry_time);
-      console.log(date1.toString("MM dd"));
+      
       console.log(date1);
       for(var i in jsonData.data){
 
